@@ -5,7 +5,7 @@ class GuessingGame {
         this.currentGuess = null;
       }
     
-      setRange(min, max) {
+    setRange(min, max) {
         this.min = min;
         this.max = max;
     }
@@ -15,9 +15,13 @@ class GuessingGame {
         return this.answer;
     }
 
-    lower() { this.max = this.answer; }
+    lower() { 
+        this.max = this.answer; 
+    }
 
-    greater() { this.min = this.answer; }
+    greater() { 
+        this.min = this.answer; 
+    }
 }
 
 module.exports = GuessingGame;
